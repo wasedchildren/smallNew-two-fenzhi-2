@@ -1,0 +1,40 @@
+<view class='header-content'>
+    <view class="topBar">
+  <view class='topbar-text'>快读·咨询</view>
+</view>
+<view class='tab'>
+  <view class="tab-view {{index==num?'border-b':''}}" data-index='{{index}}' wx:for="{{array}}" bindtap='tabClick'>
+    {{item}}</view>
+</view>
+</view>
+
+<view  class='body-content'>
+    <view class='head-wrapper'>
+    <image class='head-wrapper-br'  mode='widthFix' src='http://p0.so.qhimgs1.com/t0157d6c71e66dd5324.jpg' ></image>
+    <view class='wrapper-img'>
+        <image class='img-item'  mode='aspectFill'  src='http://p0.so.qhimgs1.com/t0157d6c71e66dd5324.jpg'></image>
+        <view class='img-icon'>热门</view>
+        <view class='img-into'>
+          <text class='img-title'>民航局官员：川航超级备降机组怎么奖励都不为过</text>
+          <text class='img-desc'>上游新闻 10:22</text>
+        </view>
+    </view>
+</view>
+
+<view class='list-wrapper'>
+   <block wx:for="{{news}}">
+      <view class='list-item' bindtap='onTapdetail'>
+            <view class='list-into'>
+              <text class='list-title'>{{item.title}}</text>
+              <text class="list-desc">{{item.name}}   {{item.date}}</text>
+            </view>
+            <view class='list-img-wrapper'>
+              <image  mode='aspectFill' src='{{item.firstImage}}'></image>
+            </view>
+      </view>
+    </block>
+</view>
+</view>
+
+
+
