@@ -22,7 +22,7 @@
 </view>
 
 <view class='list-wrapper'>
-   <block wx:for="{{news}}">
+   <block wx:for="{{news}}" wx:key='index'>
       <view class='list-item' bindtap='onTapdetail'>
             <view class='list-into'>
               <text class='list-title'>{{item.title}}</text>

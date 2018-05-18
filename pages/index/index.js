@@ -20,11 +20,7 @@ Page({
           news:result
         })
       },
-      onTapdetail() {
-        wx.navigateTo({
-          url: 'pages/detail/detail?id=1523074607642'
-        })
-      },
+     
       complete: () => {
         // 数据请求完成时候的处理代码
       }
@@ -33,5 +29,11 @@ Page({
   tabClick(e) {
     var num = e.currentTarget.dataset.index
     this.setData({ num })
+  },
+  onTapdetail() {
+    wx.navigateTo({
+      url: '../detail/detail'
+    })
   }
 })
+  
