@@ -3,14 +3,15 @@ Page({
   data: {
     array: ["国内", "国际", "财经", "娱乐", "军事", "体育", "其他"],
     num:0,
-    news:[]    
+    news:[],    
+    currentType: "gn"
    },
 
   onLoad: function (option) {
     wx.request({
       url: 'https://test-miniprogram.com/api/news/list', // 这里写请求的url
       data: {
-        type: 'gn' // 此处为请求时候的数据
+        type: this.data.currentType // 此处为请求时候的数据
       },
       success: res => {
         // 数据请求成功时候的处理代码
@@ -30,9 +31,11 @@ Page({
     var num = e.currentTarget.dataset.index
     this.setData({ num })
   },
-  onTapdetail() {
+  onTapdetail(e) {
+    const { id } = e.currentTarget.dataset;
     wx.navigateTo({
-      url: '../detail/detail'
+      url: `/pages/detail/detail?newsId=${id}`
+      
     })
   }
 })
