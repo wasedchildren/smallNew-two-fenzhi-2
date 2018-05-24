@@ -6,6 +6,12 @@
   text-align: left;
   line-height: 150rpx;
 }
+.icon{
+ width:50rpx; 
+ height:50rpx;
+ float: left;
+ margin-top: 50rpx;
+}
  p{
   width: 100%;
   display: flex;
@@ -19,6 +25,30 @@
   margin:15rpx;
 
 }
+.time{
+  display: flex;
+  justify-content:space-between;
+  height: 100rpx;
+  width: 100%;
+  color: gainsboro;
+}
+.zi{
+ width: 40%;
+ margin-left: 15rpx;
+}
+.read{
+width: 25%;
+}
 .section{
-  margin:15rpx;
+  margin:30rpx 15rpx;
+}
+.img1{
+  width: 90%;
+  height: 400rpx;
+  background-image: url(http://p0.so.qhimgs1.com/t0157d6c71e66dd5324.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  margin: auto;
+
 }
