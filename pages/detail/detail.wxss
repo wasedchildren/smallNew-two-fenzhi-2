@@ -1,10 +1,15 @@
 /* pages/detail/detail.wxss */
 
 .header{
+  width: 100%;
   height: 150rpx;
   border-bottom: 1rpx solid  #409EDB;
   text-align: left;
   line-height: 150rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
 }
 .icon{
  width:50rpx; 
@@ -17,7 +22,7 @@
   display: flex;
   flex-wrap: wrap
 } 
-.p{
+.title{
   font-weight: 600;
   font-size: 50rpx;
   flex: 1;
@@ -30,25 +35,35 @@
   justify-content:space-between;
   height: 100rpx;
   width: 100%;
-  color: gainsboro;
+  color: #409EDB;
+  
 }
 .zi{
  width: 40%;
  margin-left: 15rpx;
+
+
 }
 .read{
 width: 25%;
+
 }
-.section{
+.p{
   margin:30rpx 15rpx;
+  font-size: 30rpx;
 }
-.img1{
+.strong{
+  font-size: 40rpx;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: grey;
+  margin: 15rpx;
+}
+.image{
   width: 90%;
   height: 400rpx;
-  background-image: url(http://p0.so.qhimgs1.com/t0157d6c71e66dd5324.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  margin: auto;
+  margin: 15rpx 30rpx;
 
+}
+.scroll{
+  margin-top: 170rpx;
 }

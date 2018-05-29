@@ -5,14 +5,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+   detail:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+  //  console.log(options.newsId),
+   
+   wx.request({
+     url: 'https://test-miniprogram.com/api/news/detail',
+     data:{
+       id:options.newsId
+     },
+     success:res=>{
+      //  console.log(res.data)
+       let result = res.data.result
+       this.setData({
+         detail:result
+       })
+     }
+   })
   },
 
   /**
